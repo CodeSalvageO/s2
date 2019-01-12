@@ -1,0 +1,12 @@
+<button onclick="sendMail()">USE computer to send email</button>
+<script>
+function sendMail()
+    {
+        var to = prompt("To:", "Um...");
+        var subject = prompt("Subject:", "Uh....");
+        var body = prompt("Body:", "So....");
+        if (to and subject and body != null) {
+            document.getElementById("game").innerHTML = window.open('mailto:'+to+'?subject='+subject+'&body='+body);
+        }
+    }
+</script>
